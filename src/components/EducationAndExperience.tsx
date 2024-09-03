@@ -16,7 +16,7 @@ const EducationAndExperience = () => {
                     <div className="timeline-start mb-10 md:text-end">
                         <time className="font-mono italic text-white">Aug 2022 - May 2024</time>
                         <div className="text-lg font-black text-orange-600">Syracuse University</div>
-                        <div className="text-s font-black text-orange-600">Master's Degree in Computer Science</div>
+                        <div className="text-s font-black text-orange-600">Master&apos;s Degree in Computer Science</div>
                         <p className='text-white'>Coursework: Data Structures & Algorithms, Object Oriented Design, DBMS, Operating Systems, Data Science, iOS Development</p>
                     </div>
                     <div className="timeline-end mb-10 md:text-end flex justify-center items-center">

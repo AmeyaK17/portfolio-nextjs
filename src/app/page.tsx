@@ -5,6 +5,8 @@ import { LinkPreview } from "@/components/ui/link-preview"
 import { SparklesCore } from "@/components/ui/sparkles"
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
+import AmeyaImage from "../../public/profile/Ameya.jpg"
+import Image from "next/image"
 
 const page = () => {
   const nameText = [{ text: "Ameya" }, { text: "Kale" }]
@@ -15,31 +17,45 @@ const page = () => {
       <div className="w-full absolute inset-0 h-screen z-0">
         <SparklesCore
           id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
+          background="#000000"
+          minSize={1}
+          maxSize={2}
+          particleDensity={30}
           className="w-full h-full"
           particleColor="#0096FF"
         />
       </div>
       
-      <div className="z-10">
+      <div className="text-white z-10">
         <TypewriterEffect words={nameText} />
-        <div className="px-20 py-5 text-center">
-          <TextGenerateEffect words={descText} />
+      </div>
+      
+
+      <div className="z-10">
+        <div className="flex">
+          <div className="avatar pl-16 pt-10 pb-16">
+            <div className="ring-primary ring-offset-base-100 w-64 rounded-full ring ring-offset-2">
+              <Image src={AmeyaImage} alt="Ameya Image"/>
+            </div>
+          </div>
+          <div>
+            
+            <div className="px-20 pt-20 pb-16 text-center flex justify-center items-center">
+              <TextGenerateEffect words={descText} />
+            </div>
+          </div>
         </div>
 
-        <div className="flex justify-center items-center p-5">
+        <div className="flex justify-center items-center">
           <div className="absolute bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
           <div className="absolute bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
           <div className="absolute bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
           <div className="absolute bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
         </div>
 
-        <h2 className="flex justify-center items-center p-5">Chect out my profiles below:</h2>
+        <h2 className="flex justify-center items-center p-3 text-white">Chect out my profiles below:</h2>
 
-        <div className="flex gap-4 justify-center items-center p-5">
+        <div className="flex gap-4 justify-center items-center p-3">
         <LinkPreview url="https://www.linkedin.com/in/ameyakale/" className="h-10 w-40 border rounded-full p-2 flex flex-row justify-center items-center border-linkedinColor hover:bg-linkedinColor hover:text-black">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="#ffffff"  stroke="currentColor">
               <path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"></path>
