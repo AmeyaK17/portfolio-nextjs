@@ -3,11 +3,9 @@
 import React from 'react'
 import { FloatingDock } from './ui/floating-dock'
 import {
-    IconBrandGithub,
-    IconBrandX,
     IconExchange,
     IconHome,
-    IconNewSection,
+    IconPrompt,
     IconBriefcase2,
     IconBrandLeetcode,
   } from "@tabler/icons-react";
@@ -30,11 +28,11 @@ const Dock = () => {
           href: "/educationAndExperience",
         },
         {
-          title: "Components",
+          title: "Projects",
           icon: (
-            <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconPrompt className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
-          href: "#",
+          href: "/projects",
         },
         {
           title: "LeetCode",
@@ -47,20 +45,6 @@ const Dock = () => {
           title: "Changelog",
           icon: (
             <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-          ),
-          href: "#",
-        },
-        {
-          title: "Twitter",
-          icon: (
-            <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-          ),
-          href: "#",
-        },
-        {
-          title: "GitHub",
-          icon: (
-            <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "#",
         },

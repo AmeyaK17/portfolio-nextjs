@@ -6,6 +6,8 @@ import USTImage from '../../public/EducationAndExperience/ust.jpg'
 const EducationAndExperience = () => {
     return (
         <div>
+            <h1 className="flex justify-center text-3xl text-white p-5">Education & Experience</h1>
+
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
                     <div className="timeline-middle p-2">
@@ -35,10 +37,8 @@ const EducationAndExperience = () => {
                         <div className="text-s font-black text-sky-400">UST Global</div>
                         <p className='text-white'>Improved user experience by 25% through developing reusable React.js components, enhancing code maintainability for a large-scale project at IHG Hotels and Resorts. Reduced server response time by 30% by implementing RESTful APIs in Node.js and caching. Increased system reliability by deploying and maintaining 3 production builds, ensuring on-time releases.</p>
                     </div>
-                    <div className="timeline-start mb-10 md:text-end">
-                        <div className='h-5 w-40'>
-                            <Image src={USTImage} alt='UST Image' />
-                        </div>
+                    <div className="h-auto w-40 timeline-start mb-10 md:text-end">
+                        <Image src={USTImage} alt='UST Image' />
                     </div>
                     <hr className='bg-sky-400'/>
                 </li>

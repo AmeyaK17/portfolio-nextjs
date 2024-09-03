@@ -15,6 +15,25 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        githubColor: '#2DBA4E', 
+        gfgColor: '#2f8d46', 
+        leetcodeColor: '#E7A41F',
+        linkedinColor: '#0077B5',
+      },
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
