@@ -3,11 +3,11 @@
 import React from 'react'
 import { FloatingDock } from './ui/floating-dock'
 import {
-    IconExchange,
+    IconUser,
     IconHome,
-    IconPrompt,
+    IconPencilCode,
     IconBriefcase2,
-    IconBrandLeetcode,
+    IconTrophy,
   } from "@tabler/icons-react";
 
 const Dock = () => {
@@ -30,28 +30,28 @@ const Dock = () => {
         {
           title: "Projects",
           icon: (
-            <IconPrompt className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconPencilCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
           href: "/projects",
         },
         {
-          title: "LeetCode",
+          title: "Achievements",
           icon: (
-            <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconTrophy className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
-          href: "https://leetcode.com/u/AmeyaK17/",
+          href: "/achievements",
         },
         {
-          title: "Changelog",
+          title: "About Me",
           icon: (
-            <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
           ),
-          href: "#",
+          href: "aboutMe",
         },
       ];
 
   return (
-    <div className='fixed bottom-2.5 left-1/2 transform -translate-x-1/2 flex items-center justify-center'>
+    <div className='fixed bottom-2.5 left-1/2 transform -translate-x-1/2 flex items-center justify-center z-20'>
       <FloatingDock items={links}/>
     </div>
   )

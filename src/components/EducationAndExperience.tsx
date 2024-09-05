@@ -6,8 +6,6 @@ import USTImage from '../../public/EducationAndExperience/ust.jpg'
 const EducationAndExperience = () => {
     return (
         <div>
-            <h1 className="flex justify-center text-3xl text-white p-5">Education & Experience</h1>
-
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
                     <div className="timeline-middle p-2">
