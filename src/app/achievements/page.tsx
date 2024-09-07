@@ -28,11 +28,11 @@ const page = () => {
   return (
     <div className=" h-full w-full overflow-hidden">
       <div className="relative z-10">
-        <div className='flex justify-center items-center p-5'>
+        <div className='sticky top-0 backdrop-blur transition-colors flex justify-center items-center z-40 supports-backdrop-blur:bg-white/95 dark:bg-black/75'>
             <h2 className='text-3xl text-white p-5'>Achievements</h2>
         </div>
         
-        <div className='flex justify-center items-center px-1'>
+        <div className='flex justify-center items-center p-5'>
             <FocusCards cards={achievements} />
         </div>
       </div>

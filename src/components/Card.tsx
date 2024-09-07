@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
+import { BackgroundGradient } from './ui/background-gradient';
 
 interface ProjectDetails {
     title: string;
@@ -12,7 +13,7 @@ const Card = ({projectDetails}: {projectDetails: ProjectDetails}) => {
 
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-xl border">
+            <div className="card backdrop-blur bg-base-100 w-96 border border-slate-400 hover:shadow-md hover:shadow-sky-400">
                 <figure className="h-52 w-full relative">
                     <Image
                         src={projectDetails.image.src}
@@ -27,7 +28,7 @@ const Card = ({projectDetails}: {projectDetails: ProjectDetails}) => {
                     <h2 className="card-title justify-center">
                         {projectDetails.title}
                         {projectDetails.newBadge && (
-                            <div className="badge badge-secondary">New</div>
+                            <div className="badge badge-success">New</div>
                         )}
                     </h2>
                     <p>{projectDetails.description}</p>

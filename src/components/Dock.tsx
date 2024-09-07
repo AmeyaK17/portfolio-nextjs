@@ -15,7 +15,7 @@ const Dock = () => {
         {
           title: "Home",
           icon: (
-            <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconHome className="h-full w-full text-neutral-500 dark:text-sky-400" />
           ),
           href: "/",
         },
@@ -23,28 +23,28 @@ const Dock = () => {
         {
           title: "Education and Experience",
           icon: (
-            <IconBriefcase2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconBriefcase2 className="h-full w-full text-neutral-500 dark:text-green-400" />
           ),
           href: "/educationAndExperience",
         },
         {
           title: "Projects",
           icon: (
-            <IconPencilCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconPencilCode className="h-full w-full text-neutral-500 dark:text-red-400" />
           ),
           href: "/projects",
         },
         {
           title: "Achievements",
           icon: (
-            <IconTrophy className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconTrophy className="h-full w-full text-neutral-500 dark:text-yellow-400" />
           ),
           href: "/achievements",
         },
         {
           title: "About Me",
           icon: (
-            <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            <IconUser className="h-full w-full text-neutral-500 dark:text-slate-400" />
           ),
           href: "aboutMe",
         },

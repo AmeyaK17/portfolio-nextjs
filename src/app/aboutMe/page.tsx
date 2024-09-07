@@ -1,28 +1,24 @@
 import React from 'react'
-import {IconAlertTriangle} from "@tabler/icons-react";
+import {IconMail, IconPhone, IconBrandLinkedin} from "@tabler/icons-react";
 import { StickyScroll } from '@/components/ui/sticky-scroll-reveal';
 import Image from "next/image";
+import AmeyaAppleParkOutsideImage from "../../../public/profile/AmeyaAppleParkOutside.jpeg"
+import AmeyaAppleParkInsideImage from "../../../public/profile/AmeyaAppleParkInside.jpeg"
+import AtlantaImage from "../../../public/profile/atlanta.jpeg"
+import { BackgroundBeamsWithCollision } from '@/components/ui/background-beams-with-collision';
+import Link from 'next/link';
+import { LinkPreview } from '@/components/ui/link-preview';
 
 const page = () => {
     const content = [
         {
-          title: "Collaborative Editing",
+          title: "Ameya Kale",
           description:
-            "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+            "My approach to software development focuses on enhancing the end user's experience and making a positive impact. I have participated in and won several coding competitions, including hackathons, which have deepened my expertise and strengthened my foundational knowledge.",
           content: (
             <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-              Collaborative Editing
-            </div>
-          ),
-        },
-        {
-          title: "Real time changes",
-          description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-          content: (
-            <div className="h-full w-full  flex items-center justify-center text-white">
               <Image
-                src="/linear.webp"
+                src={AmeyaAppleParkOutsideImage}
                 width={300}
                 height={300}
                 className="h-full w-full object-cover"
@@ -32,31 +28,62 @@ const page = () => {
           ),
         },
         {
-          title: "Version control",
+          title: "Location and Opportunities",
           description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "I am currently based in Atlanta, GA, USA, and am actively seeking software development opportunities across the United States. I am also open to relocation.",
           content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-              Version control
+            <div className="h-full w-full  flex items-center justify-center text-white">
+              <Image
+                src={AtlantaImage}
+                width={300}
+                height={300}
+                className="h-full w-full object-cover"
+                alt="linear board demo"
+              />
             </div>
           ),
         },
         {
-          title: "Running out of content",
-          description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+          title: "Contact Me",
+          description:"If you like my work, or would like to know more about me, feel free to reach out! P.S. I love coffee ☕️! ",
           content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-              Running out of content
+            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+                <div className='flex flex-col'>
+                    <Link href="mailto:kale.ameya17@gmail.com" className="flex items-center p-2 hover:underline hover:underline-offset-2">
+                        <IconMail className='mr-2'/> kale.ameya17@gmail.com
+                    </Link>
+                    
+                    <Link href="tel:+13159527613" className="flex items-center p-2 hover:underline hover:underline-offset-2">
+                        <IconPhone className='mr-2'/> +1 (315) 952-7613
+                    </Link>
+                    
+                    <LinkPreview url="https://www.linkedin.com/in/ameyakale/" className="flex items-center p-2">
+                        <IconBrandLinkedin className='mr-2'/> /ameyakale
+                    </LinkPreview>
+                </div>
             </div>
           ),
         },
+        {
+            title: "",
+            description: "",
+            content: (
+              <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+                
+              </div>
+            ),
+          },
       ];
 
   return (
-    <div className='h-screen w-screen bg-black flex justify-center items-center'>
-      <StickyScroll content={content}/>
-    </div>
+    <BackgroundBeamsWithCollision>
+        <div className='h-screen w-screen bg-black flex-row justify-center items-center'>
+        <div className='sticky top-0 backdrop-blur transition-colors flex justify-center items-center z-40 supports-backdrop-blur:bg-white/95 dark:bg-black/75'>
+                <h2 className='text-3xl text-white p-5'>About Me</h2>
+            </div>
+            <StickyScroll content={content}/>
+        </div>
+    </BackgroundBeamsWithCollision>
   )
 }
 

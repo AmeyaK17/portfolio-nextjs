@@ -4,7 +4,9 @@ import GridBackground from '@/components/GridBackground'
 const page = () => {
   return (
     <GridBackground>
-      <h2 className='flex justify-center items-center text-3xl text-white p-5 z-20'>Education And Experience</h2>
+      <div className='sticky top-0 backdrop-blur transition-colors z-40 supports-backdrop-blur:bg-white/95 dark:bg-black/75 flex justify-center items-center'>
+          <h2 className='text-3xl text-white p-5'>Education and Experience</h2>
+      </div>
       <div className='p-10 px-40 flex justify-center items-center'>
           <EducationAndExperience />
       </div>
