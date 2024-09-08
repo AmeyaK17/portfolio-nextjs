@@ -3,7 +3,7 @@ import {IconMail, IconPhone, IconBrandLinkedin} from "@tabler/icons-react";
 import { StickyScroll } from '@/components/ui/sticky-scroll-reveal';
 import Image from "next/image";
 import AmeyaAppleParkOutsideImage from "../../../public/profile/AmeyaAppleParkOutside.jpeg"
-import AmeyaAppleParkInsideImage from "../../../public/profile/AmeyaAppleParkInside.jpeg"
+import AppleWWDCIDCardImage from "../../../public/profile/AppleIDCard.jpeg"
 import AtlantaImage from "../../../public/profile/atlanta.jpeg"
 import { BackgroundBeamsWithCollision } from '@/components/ui/background-beams-with-collision';
 import Link from 'next/link';
@@ -27,6 +27,22 @@ const page = () => {
             </div>
           ),
         },
+        {
+            title: "Yes, the photo is from Apple Park!",
+            description:
+              "In June 2024, I had the privilege of being invited by Apple to attend their WWDC event at Apple Park. It was an incredible experience, giving me the chance to engage in software discussions with Apple engineers and industry experts.",
+            content: (
+              <div className="h-full w-full  flex items-center justify-center text-white">
+                <Image
+                  src={AppleWWDCIDCardImage}
+                  width={300}
+                  height={300}
+                  className="h-full w-full object-cover"
+                  alt="linear board demo"
+                />
+              </div>
+            ),
+          },
         {
           title: "Location and Opportunities",
           description:
