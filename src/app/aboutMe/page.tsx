@@ -28,7 +28,7 @@ const page = () => {
           ),
         },
         {
-            title: "Yes, the photo is from Apple Park!",
+            title: "Apple Park!!!",
             description:
               "In June 2024, I had the privilege of being invited by Apple to attend their WWDC event at Apple Park. It was an incredible experience, giving me the chance to engage in software discussions with Apple engineers and industry experts.",
             content: (
@@ -46,7 +46,7 @@ const page = () => {
         {
           title: "Location and Opportunities",
           description:
-            "I am currently based in Atlanta, GA, USA, and am actively seeking software development opportunities across the United States. I am also open to relocation.",
+            "I am currently based in Dallas, TX, USA, and am actively seeking software development opportunities across the United States. I am also open to relocation.",
           content: (
             <div className="h-full w-full  flex items-center justify-center text-white">
               <Image

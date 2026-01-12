@@ -10,7 +10,7 @@ import Image from "next/image"
 
 const page = () => {
   const nameText = [{ text: "Ameya" }, { text: "Kale" }]
-  const descText = "I'm a software engineer with a Master’s degree in Computer Science and over 1.5 years of industry experience. My accolades include winning the  Apple WWDC Student Challenge 2024, and two Hackathons. I specialize in building scalable applications using technologies like Java, JavaScript, Spring Boot, React.js, and Node.js."
+  const descText = "I'm a software engineer with a Master’s degree in Computer Science and over 2 years of industry experience. My accolades include winning the  Apple WWDC Student Challenge 2024, and two Hackathons. I specialize in building scalable applications using technologies like Java, Spring Boot, JavaScript, React.js, Node.js, SQL and NoSQL."
 
   return (
     <div className="h-lvh w-full flex flex-col justify-center items-center">
