@@ -10,17 +10,17 @@ const EducationAndExperience = () => {
             <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 <li>
                     <div className="timeline-middle p-2">
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#38BDF8"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-briefcase-2 animate-bounce"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /></svg>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#6798c8"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-briefcase-2 animate-bounce"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /></svg>
                     </div>
                     <div className="timeline-end mb-10 md:text-start">
                         <time className="font-mono italic text-white">April 2025 - Present</time>
-                        <div className="text-lg font-black text-sky-400">Software Engineer</div>
-                        <div className="text-s font-black text-sky-400">Goldman Sachs</div>
+                        <div className="text-lg font-black text-[#6798c8]">Software Engineer</div>
+                        <div className="text-s font-black text-[#6798c8]">Goldman Sachs</div>
                     </div>
                     <div className="h-auto w-40 timeline-start mb-10 md:text-end">
                         <Image src={GSImage} alt='GS Image'/>
                     </div>
-                    <hr className='bg-sky-400'/>
+                    <hr className='bg-[#6798c8]'/>
                 </li>
                 
                 <li>
@@ -41,7 +41,6 @@ const EducationAndExperience = () => {
                     <hr className='bg-orange-600'/>
                 </li>
                 <li>
-                    <hr className='bg-orange-600'/>
                     <div className="timeline-middle p-2">
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#38BDF8"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-briefcase-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /></svg>
                     </div>
@@ -90,6 +89,7 @@ const EducationAndExperience = () => {
                             <Image src={USTImage} alt='UST Image' />
                         </div>
                     </div>
+                    <hr className='bg-sky-400'/>
                 </li>
             </ul>
         </div>
